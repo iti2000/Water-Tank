@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap" rel="stylesheet">    <link rel="stylesheet" href="/Project/style.css"> 
+    <link rel="stylesheet" href="/style.css">
+    <title>Water Tank</title>
+</head>
+<body>
+    <header>
+        <h2>PATEL ITI HASMUKHBHAI</h2>
+    </header>
+    <section class="battery">
+        <div class = "main">
+          <div class="water" id="water">
+            
+          </div>
+          <div class="level" id="level">
+            80 %
+          </div>
+        </div>
+        <div class = "main">
+          <div class="water" id="water">
+            
+          </div>
+          <div class="level" id="level">
+            80 %
+          </div>
+        </div>
+
+    </section>
+    <section class="buttons">
+      <div class="manual">
+        <label for="manual" class="text" >Manual</label>
+        <label class="switch">
+          <input type="checkbox" >
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="motor">
+        <label for="motor" class="text">Motor</label>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </section>
+    <div class="feature">
+      <div class="tank-capacity">
+        <div class="tc"><h2>Tank Capacity</h2></div>
+        <img src="/water-tank.png" height="50" width="60" alt="">
+        <h1>200Lts</h1>
+      </div>
+      <div class="motor-capacity">
+        <div class="mc"><h2>Motor capacity</h2></div>
+        <img src="/electric-motor.png" height="50" width="60" alt="">
+        <h1>20000wh</h1>
+      </div>
+    </div>
+
+</body>
+</html>
+<script>
+  var node = document.getElementById('level')
+  var text = node.innerText
+
+  document.getElementById("water").style.height = text.replace(" %","%");
+
+</script>
