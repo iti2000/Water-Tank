@@ -83,6 +83,17 @@ header{
 }
 
 
+/*lower and upper*/
+.lp{
+  min-height: 20vh;
+  color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  font-size:2rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
 
 /* The switch - the box around the slider */
 .switch {
@@ -220,7 +231,7 @@ h1{
   
   }
   h1{
-    font-size: 2rem
+    font-size: 1.5rem
   }
   header.h2{
     font-size: 4rem
